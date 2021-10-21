@@ -1,0 +1,4 @@
+*.gcode
+pi-cases/*.stl
+retromancer/*.stl
+printer-spool-support/*.stl
