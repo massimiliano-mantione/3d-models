@@ -428,17 +428,17 @@ module pin_row(n, h) {
 
 module imu() {
     union() {
-        translate([-5 / 2 * PIN_STEP, AB_BEAM_WIDTH + BOARD_D + (PIN_STEP / 2), 0])
-            pin_row(6, PLATE_HEIGHT);
+        translate([-4 / 2 * PIN_STEP, AB_BEAM_WIDTH + BOARD_D + (PIN_STEP / 2), 0])
+            pin_row(5, PLATE_HEIGHT);
 
-        translate([-5 / 2 * PIN_STEP, AB_BEAM_WIDTH + BOARD_D + (PIN_STEP / 2) + IMU_LEN_STEP, 0])
-            pin_row(6, PLATE_HEIGHT);
+        translate([-4 / 2 * PIN_STEP, AB_BEAM_WIDTH + BOARD_D + (PIN_STEP / 2) + IMU_LEN_STEP, 0])
+            pin_row(5, PLATE_HEIGHT);
     }
 }
 
 module lcd() {
-    translate([-4 / 2 * PIN_STEP, AB_BEAM_WIDTH + (2 * BOARD_D) + IMU_LENGHT + PIN_STEP, 0])
-        pin_row(5, PLATE_HEIGHT);
+    translate([-3 / 2 * PIN_STEP, AB_BEAM_WIDTH + (2 * BOARD_D) + IMU_LENGHT + PIN_STEP, 0])
+        pin_row(4, PLATE_HEIGHT);
 }
 
 module main() {
