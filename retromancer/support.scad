@@ -37,11 +37,20 @@ module support() {
     }
 }
 
-module two_supports() {
+module moved_support() {
     translate([10, 7, 0]) support();
-    translate([-10, 7, 0]) support();
 }
 
-mirror([0,0,0]) two_supports();
-mirror([0,1,0]) two_supports();
+module two_supports() {
+    mirror([0,0,0]) moved_support();
+    mirror([0,1,0]) moved_support();
+}
 
+//two_supports();
+
+module four_supports() {
+    mirror([0,0,0]) two_supports();
+    mirror([1,0,0]) two_supports();
+}
+
+four_supports();
